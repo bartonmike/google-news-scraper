@@ -4,15 +4,25 @@ Python installed
 Requires an installation of Chrome
 
 gnews 
+
 newspaper3k
+
 lxml[html_clean]
+
 beautifulsoup4
+
 requests
+
 selenium
+
 htmldate
+
 charset_normalizer==2.0.2
+
 fake_useragent
+
 gspread
+
 oauth2client
 
 # Google Sheets Information
