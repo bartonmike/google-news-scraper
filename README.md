@@ -144,21 +144,23 @@ then I would put as follows into the Custom Prompts section:
 
 FULL EXAMPLE FOR A Custom_Prompts Entry:
 
-# Prompts start:
-Jensen Huang NVIDIA
-Artificial Intelligence | Jensen Huang
+Prompts start:
 
-Neil Tyson Hayden Planetarium
-Astrophysics | Black Holes
+    Jensen Huang NVIDIA
+    Artificial Intelligence | Jensen Huang
+    
+    Neil Tyson Hayden Planetarium
+    Astrophysics | Black Holes
+    
+    Apple | Apple Intelligence
+    Macbook Air | Apple 
+    
+    Microsoft | Open AI | Chat GPT | Sam Altman
+    
+    Bill Gates | Microsoft
+    Gates, Bill | Microsoft
 
-Apple | Apple Intelligence
-Macbook Air | Apple 
-
-Microsoft | Open AI | Chat GPT | Sam Altman
-
-Bill Gates | Microsoft
-Gates, Bill | Microsoft
-# Prompts end
+Prompts end
 
 The program will search the first line for any similarities in the first name, last name, affiliation table. If there is a match, then that subject will be added. 
 In the example I am trying to search for 'Jensen Huang NVIDIA' and 'Neil Tyson Hayden Planetarium' in my table, so if the table has a match those prompts after would be appended. 
@@ -171,11 +173,11 @@ Prompts date formatting:
 
   if you want to search from now up to a certain date, you can enter the date below the Date/Time box
 
-#    acceptable date formats are as follows:
-#        YYYY/MM/DD (the MM and DD don't have to be two digits)
-#        "1 week ago" , "3 weeks ago", etc.
-#        "1 month ago" , "3 months ago", etc. 
-#        "1 year ago" , "3 years ago" etc.
+    acceptable date formats are as follows:
+        YYYY/MM/DD (the MM and DD don't have to be two digits)
+        "1 week ago" , "3 weeks ago", etc.
+        "1 month ago" , "3 months ago", etc. 
+        "1 year ago" , "3 years ago" etc.
     
 IMPORTANT NOTES FOR DATES: 
   1. if you choose to enter any of the latter 3, you cannot mix and match, for example you cannot do "1 year and 5 months ago", 
