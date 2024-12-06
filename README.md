@@ -44,7 +44,6 @@ The google sheets that this program makes is formatted as follows:
 ---first sheet (Named "Article_Links")
     The first cell of the first row stores the titles ('URL', 'URL TITLE', 'Search_Source', 'Search_Terms', 'Published Date', 'Date', 'Notes')
     The second cell of the first row stores the last removed and added prompts
-
     The second row stores the titles of the columns
     All the rows that follow store the article entries that were found
 
