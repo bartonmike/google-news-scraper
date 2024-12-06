@@ -1,5 +1,4 @@
-# Article Scraper Requirements ---------------------------------------------------------------------------------------------------------
-
+# Article Scraper Requirements
 Python installed
 
 Requires an installation of Chrome
@@ -16,7 +15,7 @@ pip3 install fake_useragent
 pip3 install gspread
 pip3 install oauth2client
 
-# Google Sheets Information --------------------------------------------------------------------------------------------------------------
+# Google Sheets Information
 
 This program uses the gspread python module to access and edit a google sheet
 
@@ -55,19 +54,18 @@ The google sheets that this program makes is formatted as follows:
     first row - stores the titles of the table ('Title', 'Message', 'Date')
     second row and beyond - stores run log values, such as any errors encountered and amount of entries found for each person
 
-# Inputs --------------------------------------------------------------------------------------------------------------
+# Inputs
 
 There are 5 different sections in the google sheet that takes inputs, all on the second worksheet labeled "Prompts"
 
-# First Name, Last Name, Affiliation Table ---------------
+# First Name, Last Name, Affiliation Table
 
   This is the main input of the program. It is a table which is on row 6 and below of the prompts worksheet of the google sheet. 
   It has three columns, "First Name", "Last Name", "Affiliation". Each row will correspond to a certain person, their data inputed into their
   respective columns. The program will use this table to generate separate prompts that will correspond to each row. It will use those prompts 
   to fetch news articles for each person entered. 
 
-# Prompt Formatting ---------
-
+# Prompt Formatting
       These prompts are the templates that are used to generate the prompts for each person. 
   They are formatted in the same way that one would do to search specific prompts on a web browser. 
   to search an exact phrase one must put it in quotation markes "like so". This program supports only 
@@ -86,7 +84,7 @@ There are 5 different sections in the google sheet that takes inputs, all on the
   These templates will be filled with the relative data of each person and generate all variations of the data until it has a comprehensive list
   of prompts for each person
 
-# Affiliations -----------
+# Affiliations
 
   These prompts add additional definitions for an affiliation which enables the program to create new variations on the prompts of a person. 
   An additional definition of an affiliation provides more detail and reach into searching for someone, for example an article might not constain 
@@ -102,7 +100,7 @@ There are 5 different sections in the google sheet that takes inputs, all on the
   UO = University of Oregon, U of O
   OHSU = Oregon Health and Science University
 
-# Custom Prompts -----------
+# Custom Prompts
 
   The custom prompts section is a very powerful section when it comes to additional customization. If there is a subject that doesn't fit the first name, last name, affiliation
   format, it can be entered here. The only caveat here is that each individual search entry has to be entered manually instead of being generated. 
@@ -167,7 +165,7 @@ In the example I am trying to search for 'Jensen Huang NVIDIA' and 'Neil Tyson H
 The other ones, since there is a ' | ' in them, will find no entries in the table, therefore they will be added as their separate subject and entry. 
 
 
-# Date/TIme --------------
+# Date/TIme
 
 Prompts date formatting:
 
@@ -195,7 +193,7 @@ IMPORTANT NOTES FOR DATES:
       - Bing does not support year searches, therefore if the "year" format is used for the date, bing will search all time results.
 
 
-# EXECUTION EXAMPLE IN COMMAND LINE ----------------
+# EXECUTION EXAMPLE IN COMMAND LINE
 
 An example for how the program interprets the first line is as follows: 
 
@@ -264,7 +262,7 @@ the article is still added to the SHEET, but with the title "ARTICLE TIMED OUT W
 The only time an article is not added to the SHEET is when "DUPLICATE" is present, or "Adding to SHEET" is not present
 
 
-# NOTES MESSAGES ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# NOTES MESSAGES
 
 This program has various notes that can pop up for each article, indicated in the notes section of the table on the first worksheet of the google sheet. The possible notes and 
 their explanations are as follows:
@@ -285,7 +283,7 @@ MSN News Link::: The program found an article that is on MSN news, and since MSN
 Duplicate text with.....::: This note appears when the program finds a 75% or higher similarity match between the chosen article and another article that it found before. The program doesn't 
                             update the program before with this note. 
 
-# RUNNING PROGRAM --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RUNNING PROGRAM
 
 make sure python and chrome are installed
 
