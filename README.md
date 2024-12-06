@@ -3,17 +3,17 @@ Python installed
 
 Requires an installation of Chrome
 
-pip3 install gnews 
-pip3 install newspaper3k
-pip3 install lxml[html_clean]
-pip3 install beautifulsoup4
-pip3 install requests
-pip3 install selenium
-pip3 install htmldate
-pip3 install charset_normalizer==2.0.2
-pip3 install fake_useragent
-pip3 install gspread
-pip3 install oauth2client
+gnews 
+newspaper3k
+lxml[html_clean]
+beautifulsoup4
+requests
+selenium
+htmldate
+charset_normalizer==2.0.2
+fake_useragent
+gspread
+oauth2client
 
 # Google Sheets Information
 
