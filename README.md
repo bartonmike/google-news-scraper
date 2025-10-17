@@ -303,6 +303,12 @@ Duplicate text with.....::: This note appears when the program finds a 75% or hi
 
 make sure Python and chrome are installed
 
+when running the program for the first time it is essential to install all the requirements needed using this command in the cmd:
+
+```
+pip install -r requirements.txt
+```
+
 go to the website to create a project, key, and access api's: https://console.developers.google.com/, create a project, download Drive and Sheets APIs, 
 go to credentials and create a service account, go to keys in the service account and generate a key, download the JSON, and put it into the directory with 
 the article_scraper.py program.
