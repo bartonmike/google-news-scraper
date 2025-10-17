@@ -1,0 +1,12 @@
+gnews
+newspaper3k
+requests
+beautifulsoup4
+htmldate
+charset_normalizer==2.0.0
+fake_useragent
+openai
+tqdm
+selenium
+oauth2client
+gspread
