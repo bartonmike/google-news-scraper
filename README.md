@@ -297,7 +297,7 @@ MSN News Link::: The program found an article that is on MSN news, and since MSN
                 program. 
 
 Duplicate text with.....::: This note appears when the program finds a 75% or higher similarity match between the chosen article and another article that it found before. The program doesn't 
-                            update the program before with this note. 
+                            update the article before with this note. 
 
 # RUNNING PROGRAM
 
